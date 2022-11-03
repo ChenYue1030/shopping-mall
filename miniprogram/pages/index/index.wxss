@@ -1,0 +1,7 @@
+/**index.wxss**/
+
+page {
+  padding-top: 54rpx;
+  background-color: #f9f9f9;
+  padding-bottom: 60rpx;
+}
