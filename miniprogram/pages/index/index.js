@@ -14,11 +14,13 @@ Page({
     this.getSwiperList();
   },
 
+  /**
+   * 获取轮播图数据
+   */
   getSwiperList () {
     let that = this;
     wx.cloud.database().collection('swiper').get({
       success: function(res) {
-        console.log(res)
         that.setData({
           swiperList: res.data
         })
