@@ -1,7 +1,7 @@
 /* components/search/search.wxss */
 .search-container {
   background-color: #ff6c23;
-  padding: 20rpx;
+  padding: 0 20rpx 20rpx 20rpx;
   font-size: 32rpx;
 }
 
