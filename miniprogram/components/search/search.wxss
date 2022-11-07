@@ -2,7 +2,7 @@
 .search-container {
   background-color: #ff6c23;
   padding: 0 20rpx 20rpx 20rpx;
-  font-size: 32rpx;
+  font-size: 28rpx;
 }
 
 .search-box {
