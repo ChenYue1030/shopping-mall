@@ -2,26 +2,28 @@
 .search-container {
   background-color: #ff6c23;
   padding: 0 20rpx 20rpx 20rpx;
-  font-size: 28rpx;
 }
 
 .search-box {
   display: flex;
   flex-direction: row;
+  height: 72rpx;
+  line-height: 72rpx;
   background-color: #fff;
   padding: 0 20rpx;
   border-radius: 20rpx;
   box-sizing: border-box;
-  justify-content: space-between;
   align-items: center;
 }
 
 .search-input {
-  padding: 10rpx;
   width: 600rpx;
+  font-size: 30rpx;
+  padding: 10rpx;
 }
 
 .search-img {
-  width: 48rpx;
-  height: 48rpx;
+  width: 45rpx;
+  height: 45rpx;
+  padding: 10rpx;
 }
