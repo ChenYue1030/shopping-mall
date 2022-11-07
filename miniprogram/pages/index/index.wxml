@@ -1,15 +1,22 @@
 <!--index.wxml-->
-<view class="container">
-  <!-- 搜索区域 -->
-  <search></search>
-  <!-- 轮播图区域 -->
-  <view class="swiper-container">
-    <swiper class="swiper-box" indicator-dots='true' indicator-color='#fff' indicator-active-color="#ff6c23" autoplay>
-        <block wx:for="{{swiperList}}" wx:key="index">
-          <swiper-item>
-            <image data-id="{{item._id}}" class="swiper-img" src="{{item.src}}" mode="scaleToFill" lazy-load="true"></image>
-          </swiper-item>
-        </block>
-      </swiper>
-  </view>
+<!-- 搜索区域 -->
+<search></search>
+<!-- 轮播图区域 -->
+<view class="swiper-container">
+  <swiper class="swiper-box" indicator-dots='true' indicator-color='#fff' indicator-active-color="#ff6c23" autoplay>
+      <block wx:for="{{swiperList}}" wx:key="_id">
+        <swiper-item data-id="{{item._id}}">
+          <image class="swiper-img" src="{{item.src}}" mode="scaleToFill" lazy-load="true"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+</view>
+<!-- 分类区域 -->
+<view class="classification">
+  <block wx:for="{{classification}}" wx:key="_id">
+    <view class="classification-item" data-id="{{item._id}}">
+      <image class="classification-image" src="{{item.src}}" mode="scaleToFill" lazy-load="true"></image>
+      <text class="classification-text">{{item.name}}</text>
+    </view>
+  </block>
 </view>
