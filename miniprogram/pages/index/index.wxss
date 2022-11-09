@@ -22,8 +22,12 @@ page {
 .classification {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 20rpx;
-  flex-wrap: wrap;
+  padding: 10rpx;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgb(150 150 150 / 30%);
+  border-radius: 20rpx;
 }
 
 .classification-item {
